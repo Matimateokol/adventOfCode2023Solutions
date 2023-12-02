@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File dataSource = new File("C:\\Users\\mateu\\Documents\\Code\\adventOfCode2023Solutions\\src\\main\\resources\\dataInputs\\day2-dataInput.txt");
+
+        //\\//\\//\\//\\//\\ Part 1
+        File dataSource = new File("src\\main\\resources\\dataInputs\\day2-dataInput.txt");
         Scanner sc = new Scanner(dataSource);
 
         int idSum = 0;
@@ -21,9 +23,9 @@ public class Main {
 
         System.out.println(idSum);
 
-        //\\//\\//\\//\\//\\
+        //\\//\\//\\//\\//\\ Part 2
 
-        dataSource = new File("C:\\Users\\mateu\\Documents\\Code\\adventOfCode2023Solutions\\src\\main\\resources\\dataInputs\\day2-dataInput.txt");
+        dataSource = new File("src\\main\\resources\\dataInputs\\day2-dataInput.txt");
         sc = new Scanner(dataSource);
 
         idSum = 0;

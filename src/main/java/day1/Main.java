@@ -5,12 +5,14 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File dataSource = new File("C:\\Users\\mateu\\Documents\\Code\\adventOfCode2023Solutions\\src\\main\\resources\\dataInputs\\day1-dataInput.txt");
+
+        //\\//\\//\\//\\//\\ Part 1
+        File dataSource = new File("src\\main\\resources\\dataInputs\\day1-dataInput.txt");
         Scanner sc = new Scanner(dataSource);
 
         Integer totalSum = 0;
         String nextLine = "start0";
-        Integer lineParsingResult = TrebuchetCalibrator.parseStringInput(nextLine);
+        int lineParsingResult = TrebuchetCalibrator.parseStringInput(nextLine);
         while (sc.hasNext()) {
             nextLine = sc.nextLine();
             lineParsingResult = TrebuchetCalibrator.parseStringInput(nextLine);
@@ -20,13 +22,11 @@ public class Main {
             }
 
         }
-//        Integer outcome = TrebuchetCalibrator.parseStringInput("7411974119");
-//        System.out.println(outcome);
 
         System.out.println(totalSum);
 
-        //\\//\\//\\//\\//\\
-        dataSource = new File("C:\\Users\\mateu\\Documents\\Code\\adventOfCode2023Solutions\\src\\main\\resources\\dataInputs\\day1-dataInput.txt");
+        //\\//\\//\\//\\//\\ Part 2
+        dataSource = new File("src\\main\\resources\\dataInputs\\day1-dataInput.txt");
         sc = new Scanner(dataSource);
 
         totalSum = 0;
