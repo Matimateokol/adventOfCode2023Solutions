@@ -42,7 +42,7 @@ public class ActualTrebuchetCalibrator extends TrebuchetCalibrator {
         DIGITS_IN_WORDS.put("thousand", 1_000);
         DIGITS_IN_WORDS.put("million", 1_000_000);
         DIGITS_IN_WORDS.put("billion", 1_000_000_000);
-    };
+    }
 
     public static Integer parseStringInput(String lineInput) {
         String digit1 = String.valueOf(findFirstDigitInString(lineInput));
@@ -62,7 +62,7 @@ public class ActualTrebuchetCalibrator extends TrebuchetCalibrator {
             if(Character.isDigit(s.charAt(firstIndexOfDigitAsNum))) {
                 firstNumber = Integer.parseInt(s.substring(firstIndexOfDigitAsNum, firstIndexOfDigitAsNum+1));
                 break;
-            };
+            }
         }
 
         for (Map.Entry<String, Integer> entry : DIGITS_IN_WORDS.entrySet()) {

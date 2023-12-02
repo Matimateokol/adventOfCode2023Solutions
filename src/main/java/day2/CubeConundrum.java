@@ -72,9 +72,7 @@ public class CubeConundrum {
             }
         }
 
-        Integer gameId = Integer.parseInt(gameDetails.substring(indexOfSpace+1, indexOfColon));
-
-        return gameId;
+        return Integer.parseInt(gameDetails.substring(indexOfSpace+1, indexOfColon));
     }
 
     public static Integer[] findCombinationOfMinCubesForGame(String gameDetails) {
